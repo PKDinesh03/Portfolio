@@ -1,0 +1,459 @@
+// name: the little smart kids
+
+// font link
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    // font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
+// p{
+//     line-height: 1.6rem;
+//     letter-spacing: 0.05rem;
+// }
+
+
+// the main content are
+// ---------------------------
+
+// 1.Navbar(header)
+// 2.Intro section
+// 3.footer
+// 4.hyperlink
+
+
+// 1.navbar(header)
+// ---------------------------
+
+.navbar{
+    // background-color:#FCF4D9;
+    .nav-link{
+        color: #f75249;
+    
+        font-weight: 550;
+    }
+    .nav-link:hover{
+        color: #ff0d00 ;
+    }
+    .nav-link:active{
+        color: #ff7d77 ;
+    }
+    .nav-link:focus{
+        color: #ff7d77 ;
+    }
+    .dropdown:hover{
+        .dropdown-menu{
+        
+            display: block;
+       .btn{
+        transition: 0.1s;
+        width: 100%;
+        text-align: left;
+      
+       }
+            .btn:hover{
+                text-align: center;
+font-weight: 510;
+            }
+        }
+    }
+}
+
+//model
+
+.popimg{
+    img{
+    object-fit: contain;
+    object-position: center;
+    border-radius: 40px;
+}
+}
+// 2.Intro
+
+.intro{
+    // background-color: #333;
+    color: #000;
+    background-image: url(../image/banner01.jpg);
+    background-color: rgb(240, 237, 237);
+}
+.mission{
+    
+  h3{
+    font-size: 3em;
+font-weight: 600;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05em;
+  } 
+  p{
+    
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    color: #fff;
+
+  } 
+}
+
+.cheight{
+    height: 43vh; 
+    object-fit: cover;
+    border-radius: 10px;
+    img{
+        height: 43vh; 
+        object-fit: cover;  
+        border-radius: 10px;
+    }
+}
+.carousel{
+    filter: brightness(80%);
+}
+// black board
+.overall{
+      border: tan solid 12px;
+    border-top: #bda27e solid 12px;
+    border-left: #b19876 solid 12px;
+    border-bottom: #c9ad86 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    background-color: #fff;
+    color: #fff;
+    height: auto;
+    h3{
+        font-size: 2.5em;
+        font-weight: 600;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.05em;  
+    }
+}
+.blackboard {
+    position: relative; 
+    // border: tan solid 12px;
+    // border-top: #bda27e solid 12px;
+    // border-left: #b19876 solid 12px;
+    // border-bottom: #c9ad86 solid 12px;
+    // box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    // background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    // background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+    height: 43vh;
+}
+
+.blackboard:before {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+
+    // font-family: 'Permanent Marker', cursive;
+    // font-size: 1.8em;
+    // color: rgba(238, 238, 238, 0.7);
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+        font-family: 'Poppins', sans-serif;
+}
+
+.form p {
+
+    position: relative;
+    margin-bottom: 1em;
+    vertical-align: middle;
+   
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.7);
+    line-height: 2.5rem;
+    font-weight: 100;
+}
+
+// 3.footer
+
+       /*    =====06.footer====*/ 
+
+       footer{
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+       }
+       .footer01{
+        width: 25%;
+        padding: 3%;
+       }
+       .footer01 img{
+        width: 80%;
+        padding: 3% 0%;
+
+       }
+       .footer02{
+        width: 25%;
+        padding: 3%;
+        text-align: left;
+       }
+       .footer01 h2{
+        padding-bottom: 3%;
+      border-bottom: 5px solid #fff ;
+      font-family: 'Poppins', sans-serif;
+       }
+       .footer02 h2{
+        padding-bottom: 3%;
+        border-bottom: 5px solid #fff;
+        font-family: 'Poppins', sans-serif;
+       }
+         /*    =====07.footer====*/ 
+         .copy{
+            display: flex;
+            flex-direction: column;
+         }
+         .copy h6{
+            margin: 2%;
+            color: rgb(75, 74, 74);
+            font-family: 'Poppins', sans-serif;
+         }
+         .copy-cont {
+            display: flex;
+            justify-content: space-around;
+         }
+
+         @media (max-width:750px) {
+
+.blackboard {
+    height: auto;
+         }
+        }
+        .cheight{
+            height: auto;
+        }
+        .mission{
+            height: auto;
+        }
+        //  some hyperlinks
+
+        .fun-img{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: auto;
+            gap: 2%;
+            height: auto;
+            padding: 1%;
+            img{
+                height: 25vh;
+                width: 100%;
+                object-fit: fill;
+            }
+        }
+     .hyperlink{
+        a{
+           text-decoration: underline;
+        }
+        .btn{
+             background-color:#f8f9fa ;
+            color:#333;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .btn:hover{
+            background-color:#333;
+            color: #fff ;
+        }
+        .btn:active{
+            background-color: #fff;
+            color: #333 ;
+        }
+        .btn:focus{
+            background-color: #fff;
+            color: #222 ;
+        }
+     }
+
+// accardian
+
+
+// baloon animation
+
+
+.ballon_container {
+    display: flex;
+  }
+  .ballon {
+    width: 60px;
+    height: 95px;
+    padding: 40px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 80%;
+    position: relative;
+    box-shadow: inset 6px 5px 35px -8px #333222;
+    position: relative;
+    top: 25%;
+    animation: moveBallon 20s infinite alternate;
+  }
+  @keyframes moveBallon {
+    0% {
+      transform: translateY(10px) rotate(0deg);
+    }
+    10% {
+      transform: translateY(40px) rotate(7deg);
+    }
+    25%{
+              transform: translateY(-15) rotate(-7deg);
+    }
+    50% {
+      transform: translateY(-50px) rotate(-4deg);
+    }
+    100% {
+      transform: translateY(-600px) rotate(8deg);
+    }
+  }
+  #balloon1 {
+    background-color: rgba(30, 203, 225, 0.8);
+    left: 4%;
+    top: 15%;
+    animation-delay: 0s;
+    position: absolute;
+  }
+  #balloon2 {
+    background-color: rgba(150, 30, 225, 0.8);
+    left: 75%;
+    top: 75%;
+    animation-delay: 0s;
+    top: 10%;
+    position: absolute;
+  }
+  #balloon3 {
+    background-color: rgba(225, 52, 30, 0.8);
+left: 5%;
+    animation-delay: 1s;
+  }
+  #balloon4 {
+    background-color: rgba(106, 225, 30, 0.8);
+    left: 4%;
+    animation-delay: 2s;
+  }
+  #balloon1::after {
+    border-color: transparent transparent rgba(30, 203, 225, 1) transparent;
+  }
+  #balloon1 .thread {
+      background-color: rgba(150, 30, 225, 1);
+    }
+  #balloon2::after {
+    border-color: transparent transparent rgba(150, 30, 225, 1) transparent;
+  }
+  #balloon2 .thread {
+      background-color: rgba(30, 203, 225, 1);
+    }
+  #balloon3::after {
+    border-color: transparent transparent rgba(225, 52, 30, 1) transparent;
+  }
+  #balloon3 .thread {
+      background-color: rgba(106, 225, 30, 1);
+    }
+  #balloon4::after {
+    border-color: transparent transparent rgba(106, 225, 30, 1) transparent;
+  }
+  #balloon4 .thread {
+      background-color: rgba(225, 52, 30, 1);
+    }
+  .ballon::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -6px;
+    border-width: 0px 8px 8px 8px;
+    border-style: none solid solid solid;
+    border-color: transparent transparent red transparent;
+    /* transform: rotate(180deg); */
+    z-index: -1;
+    left: 44%;
+  }
+  .thread {
+    height: 90px;
+    width: 1px;
+    position: absolute;
+    border: 1px solid transparent;
+    bottom: -95px;
+    background-color: red;
+    /* border-style: dotted; */
+    z-index: -1;
+  }
+  //garden section
+  .garden1{ 
+    .card{
+      border: 1px solid rgb(175, 170, 170);
+      border-radius: 40px;
+    }
+    img{
+      border-radius: 40px;
+    }
+    .card-body{
+    display: none;
+    
+  }
+}
+ .garden2{ 
+  .card{
+    border: 1px solid rgb(175, 170, 170);
+    border-radius: 40px;
+    img{
+      border-radius: 40px;
+
+    }
+  }
+    .card-body{
+    display: none;
+
+  }
+}
+//hover
+.garden1:hover{
+  .card{
+    border: none;
+    img{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 5px;
+    }
+  }
+  .card-body{
+    display: block;
+  }
+}
+.garden2:hover{
+
+  .card{
+    border: none;
+    img{
+      width: 100%;
+      height: 30vh;
+      object-fit:cover; 
+      object-position: center; 
+      border-radius: 5px; 
+    }
+  }
+  .card-body{
+    display: block;
+  }
+}
+
+// contact page

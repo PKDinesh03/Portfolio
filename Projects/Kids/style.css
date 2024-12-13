@@ -1,0 +1,790 @@
+/* this code for The little smart kids school */
+
+/* default things */
+
+/* fonts */
+/* font-family: 'Bubblegum Sans', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    font-style:normal;
+    font-weight: bolder;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bubblegum Sans', cursive;
+    padding: 3%;
+    letter-spacing: 0.1rem;
+}
+h1{
+    font-size: 5em;
+    color: #333;
+}
+h3{
+    font-size: 3em;
+    color: #333;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-weight: bold;
+    padding: 2%;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+/* --------------------------- */
+/*========home pages=========  */
+/* --------------------------- */
+/*    =====01.header=====      */
+/*    =====02.second-main===== */
+/*    =====03.parrelex effect==*/ 
+/*    =====04.fouth section====*/ 
+/*    =====05.fifth section====*/ 
+/*    ====06.footer ========== */
+/* --------------------------- */
+/* --------------------------- */
+/*   ========contact=========  */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+/* --------------------------- */
+/*   ========gallery=========  */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+/* --------------------------- */
+/*   ========garden=========   */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+/* --------------------------- */ 
+/*   ========About=========    */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+/* --------------------------- */ 
+/*   ========Responsive======  */
+/* --------------------------- */
+
+ 
+.header{
+    background-image: url(images/home/banner/bg01.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+nav span{
+    color: #ea512e;
+    font-size: 1.6rem;
+}
+nav.sticky{
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    background: rgb(245, 191, 191);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.sticky li a{
+    color: #000;
+}
+nav .logo{
+    width: 13%;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    color: #333;
+    font-size: 20px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    font-size: 1.7rem;
+    color: #ea512e;
+}
+.home-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 95vh;
+    position: relative;
+}
+.anim01 img{
+    width: 70%;
+    height:70%;
+}
+.anim01 {
+    width: 13%;
+    height: 13%;
+     position: absolute;
+    animation: move 3s linear infinite;
+}
+@keyframes move {
+    0%  { left:80%; top:15%;}
+    50%   { left:78%; top:15%;}
+    100%  { left:80%; top:15%;}
+  }
+.anim02 img{
+    width: 70%;
+    height:70%;
+}
+.anim02 {
+    width: 17%;
+    height: 17%;
+     position: absolute;
+    animation: move1 3s linear infinite;
+}
+@keyframes move1 {
+    0%  { left :10%; top:30%;}
+    50%   { left:8%; top:28%;}
+    100%  { left:10%; top:30%;}
+   
+  }
+.anim03 img{
+    width: 70%;
+    height:70%;
+}
+.anim03 {
+    width: 15%;
+    height: 15%;
+     position: absolute;
+    animation: move2 3s linear infinite;
+}
+@keyframes move2 {
+    0%  { left:60%; top:65%;}
+    50%   { left:60%; top:67%;}
+    100%  { left:60%; top:65%;}
+  }
+
+  /* =====02.second-main===== */ 
+
+  .main-second{
+    width: 100%;
+    height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    margin:  auto;
+ background-image: url(images/home/secondbg.png);
+ background-position: center;
+  }
+  .main-second01{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-head{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width: 50%;
+    text-align: center;
+  }
+  .firstbox{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 5% 2%;
+    transition: .7s;
+  }
+  .firstbox h4{
+    font-size: 1.5em;
+  }
+  .fimg{
+    border-radius: 100%;
+    transition: .7s;
+  }
+  .fimg img{
+    border-radius: 100%;
+    width: 85%;
+  }
+  .firstbox:hover .fimg{
+    background-color: #ffa4a4;
+  }
+  .firstbox:hover{
+    background-color: #fff;
+  }
+
+    /* =====03.parrelex effect===== */ 
+    .parallax {
+        background-image: url("images/home/parrelexbg.png");
+        background-color: #fcf3f3;
+        min-height: 600px; 
+        background-attachment: fixed;
+        background-position: 50% 61px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; 
+      }
+    .parallax h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parallax1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .par-int{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-left: 5%;
+    }
+    .parfont{
+        width: 22%;
+        color: #333;
+    }
+    .par-img{
+        width: 40%;
+        margin-top: 2%;
+    }
+    span .picon{
+        border-radius: 100%;
+    }
+    .picon img{
+        width: 9%;
+        padding: 0.5%;
+        background-color: #fff;
+        border-radius: 100%;
+        transition: .5s;
+    }
+    .box01:hover .picon img{
+        width: 15%;
+        padding: 0.1%;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 2px solid #fad2d2;
+    }
+    .box01:hover{
+        border: 3px solid #fad2d2;
+        border-radius: 10px;
+        padding: 3%;
+        margin-bottom: 1.5%;
+    }
+    /* 04.fourth section */
+
+    .fourth-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        place-items: center;
+        background-image: url(images/home/fourthbg.png);
+        background-position:right;
+        background-size: cover;
+    }
+    .fourth-fontbox{
+        width: 70%;
+    }
+    .fourth-fontbox .fourthheading{
+        font-family: 'Bubblegum Sans', cursive;
+        color:#fc8080;
+        padding-bottom: 3%;
+    }
+    .fourthno{
+        color: #fc8080;
+        background-color:#fdc0c0;
+        padding: 1.5%;
+        border-radius: 100%;
+    }
+
+       /*    =====06.footer====*/ 
+
+       footer{
+        display: flex;
+        justify-content: center;
+       }
+       .footer01{
+        width: 25%;
+        padding: 3%;
+       }
+       .footer01 img{
+        width: 80%;
+        padding: 5% 0%;
+
+       }
+       .footer02{
+        width: 25%;
+        padding: 3%;
+        text-align: left;
+       }
+       .footer01 h2{
+      border-bottom: 5px solid #fad2d2 ;
+       }
+       .footer02 h2{
+        border-bottom: 5px solid #fad2d2;
+       }
+         /*    =====07.footer====*/ 
+         .copy{
+            display: flex;
+            flex-direction: column;
+            height: 10vh;
+         }
+         .hline{
+            width: 80%;
+            margin: 1.5% auto;
+         }
+         .copy h2{
+            margin-bottom: 1.5%;
+            color: rgb(124, 124, 124);
+         }
+         .copy-cont {
+            display: flex;
+            justify-content: space-around;
+         }
+/* --------------------------- */
+/*   ========contact=========  */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+         .services{
+            height: auto;
+            margin-bottom: 0%;
+            background-image: url(images/home/secondbg.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .sbig-box{
+            height: 35vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #f3f3f3;
+        }
+        .ssbig-box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -4%;
+        }
+        .sbox01{
+            width:30%;
+            height: 20%;
+            border: 3px solid #fad2d2;
+            padding: 3%;
+            margin-left: 3%;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .sbox01 i{
+            font-size: 3rem;
+            color:#333;
+        }
+        .sbox01 h4{
+            font-size: 1.25rem;
+            margin: 4% 0;
+        }
+        .sbox01:hover{
+            box-shadow: 0 18px 38px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+            transform: translateY(-2%);
+        }
+        .cont{
+            background-image: url(images/contact/fourthbg.png);
+            background-position: center;
+            background-size: cover;
+            padding: 3%;
+        }
+/* --------------------------- */
+/*   ========gallery=========  */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+.gallerybox{
+    margin-bottom:3%;
+    width: 100%;
+    height: auto;
+    padding: 6% 0%;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/gallery/galbg02.png);
+}
+.javagal{
+    display: grid;
+    width: 80%;
+    height: auto;
+    row-gap: 3%;
+    column-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;  
+    place-items: center;  
+    margin-left: auto;
+    margin-right: auto;
+}
+  .javagal img{
+    width: 100%;
+    height: auto;
+    padding: 1.5% 1%;
+    transition: 0.1s;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: #fcf8f8;
+    padding:3% 3% 12% 3%;
+    transition: 0.7s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .javagal img:hover{
+    border-radius: 100%;
+    background-color: #ea512e;
+    filter: brightness(80%);
+    transform: skew(5deg);
+    box-shadow: 0 18px 38px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+  }
+
+/* --------------------------- */ 
+/*   ========garden=========  */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+
+.fourthsecond-box a{
+    padding: 2% 7%;
+    background-color: #fad2d2;
+    border-radius: 10px;
+    margin: 2%;
+    transition: 0.7s;
+}
+.fourthsecond-box p{
+margin-bottom: 5%;
+}
+.fourthsecond-box a:hover{
+    background-color: #fc4646;
+}
+.img-size{
+    width: 70%;
+}
+.img-size img{
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.6s;
+}
+.img-size :hover{
+    border-radius: 100%;
+    transform: skew(5deg);
+}
+       
+/* --------------------------- */ 
+/*   ========About=========    */
+/* --------------------------- */
+/*    =====01.firstbox=====    */
+
+.aboutbox1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.abox01{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),#fa9f9fcc);
+    padding: 4%;
+    text-align: center;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.abox01:hover{
+    transform: skewy(5deg);
+    background-image: linear-gradient(rgb(255, 255, 255),#fa9f9f);
+    border-radius: 50%;
+}
+.ains{
+    background-image: url(images/home/fourthbg.png);
+    background-position: center;
+    background-size: cover;
+}
+/* end */
+.instructor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fourthheading{
+    font-family: 'Bubblegum Sans', cursive;
+    color:#fc8080;
+    padding-bottom: 3%;
+}
+.insfont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.insfont:hover{
+    filter: brightness(90%);
+}
+.insfont a{
+    padding: 2% 7%;
+    background-color: #fad2d2;
+    border-radius: 10px;
+    margin: 2%;
+    transition: 0.7s;
+}
+.insfont a:hover{
+    background-color: #fc7e7e;
+}
+.insimg img{
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 4%;
+    transition: 0.3s;
+}
+.insimg img:hover{
+  filter: brightness(60%);
+}
+
+
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */ 
+/*  home page responsive  */
+
+/* nav res ponsive for all pages */
+.toggle-btn{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+ top: 3.5rem;
+ right: 1.5rem;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+@media (max-width:900px) {
+    .toggle-btn{
+        display: flex;
+        top: 2.5rem;
+    }
+     .navlinks {
+        display: none;
+        padding: 0.5rem;
+    }
+     .navlinks li{    
+       padding: 0.5rem;
+       transition: .5s;
+    }
+     .navlinks li a:hover{    
+       background-color: #ffe1e1;
+       padding: 1% 30%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color:rgb(252, 198, 198);
+        z-index: 1;
+    }   
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav .active{
+        display: flex;
+    }
+    nav .logo{
+        width: 30%;
+    }
+         /* nav end */
+         /* home banner start */
+.anim01, .anim02, .anim03{
+    display: none;
+}
+.home-text{
+    width: 100%;
+}
+.header{
+    background-image: url(images/res/27.png);
+    background-position: center;
+}
+.home-text h3,h1{
+    color: #f83232;
+}
+/* home end */
+
+/* home second section */
+.main-second01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-head{
+    width: 80%;
+  }
+  .firstbox{
+    width: 90%;
+  }
+  /* home third section */
+.par-int{
+    display:flex;
+    flex-direction: column; 
+ } 
+.par-img{
+display: none;
+}
+.parfont{
+    width: 90%;
+    color: #333;
+}
+/* home fourth section */
+.fourth-section{
+    display: block;
+}
+.fouthfirst-box{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fouthfirst-box img{
+    width: 100%;
+    height: auto;
+    margin: 3% auto;
+}
+.fourth-fontbox{
+    width: 95%;
+}
+/* footer */
+footer{
+    display: block;
+   }
+   .footer01{
+    width: 100%;
+   }
+   .footer02{
+    width: 100%;
+   }
+   .copy-cont {
+    display: block;
+   }
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */ 
+/* contact page responsive*/
+.sbig-box{
+    height: 35vh;
+    display: block;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+}
+.ssbig-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4%;
+}
+.sbox01{
+    width:100%;
+    margin: 6%;
+}
+.contact-form{
+    width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+} 
+.sbig-box{
+    height: auto;
+}
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */ 
+/* gallery page responsive*/
+.javagal{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.javagal img{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */ 
+/* about page responsive*/
+.aboutbox1{
+    display: block;
+}
+.instructor{
+    display:block;
+    padding: 2%;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+}
+.ttext{
+    display: flex;
+    flex-direction: column;
+}
+.timg{
+    height: 150px;
+    width: 150px;
+}
+.timg img{
+    height: 150px;
+    width: 150px;
+}
+}
+
+

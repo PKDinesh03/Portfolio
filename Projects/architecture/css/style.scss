@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1em;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: 00px;
+    background-color: #252531;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.nav-link {
+    font-size: 1em;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+
+.my-container {
+    transition: 0.4s;
+    margin-left: 13%;
+}
+
+.socail{
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20%;
+}
+
+.copy{
+    padding: 5%;
+    text-align: center;
+}
+
+/* for navbar */
+
+.active-nav {
+    margin-left: -300px;
+}
+
+
+/* for main section */
+
+.active-cont {
+    margin-left: 0px;
+}
+
+#menu-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+#menu-btn:focus {
+    box-shadow: 0 0 0 0.25rem #bcbbbd44;
+}
+
+.gallery{
+    margin: 5%;
+.gall{
+    position: relative;
+    filter: brightness(90%);
+}
+    .hide-text{
+        position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+        font-size: 1.3rem;
+        color: #fff;
+         transition: 0.1s;
+         visibility: hidden;
+         text-transform: uppercase;
+    }
+
+    .img-fluid{
+        height: 35vh;
+        width: 100%;
+        transition: 0.4s;
+        object-fit: cover;
+    }
+}
+.gall:hover .hide-text{
+   visibility: visible;
+}
+
+.gall:hover img{
+   filter: brightness(30%);
+}
+
+// home images
+
+@media (max-width:900px) {
+   .navbar{
+   margin-left: -300px;
+   }
+   /* for navbar */
+.active-nav {
+    margin-left: 0px;
+}
+/* for main section */
+.active-cont {
+    margin-left: 250px;
+}
+/* Gallery */
+}
+@media (max-width:1400px){
+    .navbar{width: 256px;
+    }
+}
+
+// end home page
+
+// start about page
+
+.home{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.555),rgba(255, 255, 255, 0.455)), url(../image/abt-home01.jpg);
+    height: 40vh;
+    display: grid;
+    place-items: center;
+    color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+.abt-first {
+    .abt-fimg{
+        text-align: end;
+    }
+    .abt-ftext{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ text-align: end;
+ span{
+    font-size: 1.9em;
+    font-style: italic;
+ }
+    }
+}
+// second
+.abt-second{
+    background-color: #f3f3f3;
+    transition: 0.4s;
+}
+.abt-sbox{
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .abt-s1box {
+        transition: 0.4s;
+    }
+    .abt-s1box:hover{
+        background-color: rgb(34, 34, 34);
+        color: #fff;
+        border-radius: 50px 5px 50px 5px;
+        padding: 0 5%;
+    }
+    .abt-s1box img{
+   margin-left: 80%;
+   width: 3rem;
+    }
+}
+.abt-second:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+// about third
+.third{
+    background-color: #f3f3f3;
+}
+
+.abt-third{
+     img{
+   width: 100%;
+   height: 30vh;
+   filter: brightness(60%);
+   transition: 0.4s;
+   object-fit: cover;
+}
+img:hover{
+    filter: brightness(90%);
+}
+}
+// our team
+
+.team-img{
+   .card{
+    border:none;
+    background-color: #fff;
+    transition: 0.3s;
+   }
+   .card:hover{
+   background-color: #333;
+   color: #fff;
+   }
+}
+
+// about fouth section(dup third)
+
+.abt-wimg1{
+    background-image: url(../image/home01.jpg);
+    height: 25vh;
+}
+.fourth{
+    .card{
+        border: none;
+    }
+    .card-body{
+      transition: 0.3s;
+      border: 1px solid rgba(51, 51, 51, 0.596);
+    }
+    .card img{
+        height: 25vh;
+    }
+   .fwrk:hover{
+  .card-body{
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 30px 30px;
+  }
+  .card img{
+    filter: brightness(50%);
+  }
+   }
+}
+
+// parrelex effect
+
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.555),rgba(255, 255, 255, 0.555)), url("../image/parellex.webp");
+    /* Set a specific height */
+    min-height: 250px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+  }
+.parfont{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.parfont h2{
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    font-weight: 900;
+    
+}
+// footer
+
+.last{
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+// contact page
+
+.contact{
+form{
+    .btn:hover{
+        background-color: #333;
+        border: 1px solid black;
+       
+    }
+}
+}
+
+// Project page
+
+.Project{
+    background-image: url(../image/project.jpg);
+    height: 40vh;
+    display: grid;
+    place-items: center;
+    color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+.finished{
+    background-image: url(../image/home07.jpg);
+    height: 50vh;
+}
+.ongoing{
+    background-image: url(../image/home07.jpg);
+    height: 50vh;
+}
+.client:hover{
+    background-color: #333;
+    border-radius: 40px 0 40px 0;
+    img{
+        background-color: #f3f3f3;
+    }
+}
+
+// loader
+
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    top: 20%;
+    left: 10%;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: -1;
+  }
+  
+  #loading-image {
+    z-index: 100;
+  }
